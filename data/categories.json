@@ -1,0 +1,17 @@
+{
+  "Heart of Stones": {"yaml_option": ["heartsanity"]},
+  "Supadow Minigames": {"yaml_option": ["supadow"]},
+  "Gift Squashing Missions": {"hidden": true, "yaml_option": ["sqaush_all_gifts_missions"]},
+  "Access Keys": {"hidden": true},
+  "Cheats": {"yaml_option": ["cheats"]},
+  "Very Mission Specific Items": {"hidden": true},
+  "Building Keys": {"hidden": true},
+  "Traps": {"hidden": true},
+  "Movesanity": {"hidden": true},
+  "Present Fillers": {"hidden": true},
+  "Gift Sanity": {"hidden": true},
+  "Basic Logic": {"hidden": true},
+  "Advanced Logic": {"hidden": true},
+  "Separated": {"hidden": true, "yaml_option": ["key_preference"]},
+  "Progressive": {"hidden": true, "yaml_option": ["key_preference"]}
+}

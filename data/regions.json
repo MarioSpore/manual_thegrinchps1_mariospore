@@ -1,0 +1,8 @@
+{
+  "Mount Crumpit": {"connects_to": ["Whoville", "Who Forest", "Who Dump", "Who Lake", "Sleigh Room"]},
+  "Whoville": {"requires": "({YamlDisabled(key_preference)} AND |Whoville Access Key|) OR {YamlEnabled(key_preference)}"},
+  "Who Forest": {"requires": "({YamlDisabled(key_preference)} AND |Who Forest Access Key|) OR ({YamlEnabled(acess_preference)} AND |Progressive Area Access Key:1|)"},
+  "Who Dump": {"requires": "({YamlDisabled(key_preference)} AND |Who Dump Access Key|) OR ({YamlEnabled(key_preference)} AND |Progressive Area Access Key:2|)"},
+  "Who Lake": {"requires": "({YamlDisabled(key_preference)} AND |Who Lake Access Key|) OR ({YamlEnabled(key_preference)} AND |Progressive Area Access Key:3|)"},
+  "Sleigh Room": {"requires": "|@Sleigh Parts:5|"}
+}
