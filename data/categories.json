@@ -1,5 +1,5 @@
 {
-  "Blueprints": {"hidden": true},
+  "Blueprints": {"hidden": true, "yaml_option": ["blueprintsanity"]},
   "Heart of Stones": {"yaml_option": ["heartsanity"]},
   "Supadow Minigames": {"yaml_option": ["supadow"]},
   "Gift Squashing Missions": {"hidden": true, "yaml_option": ["sqaush_all_gifts_missions"]},
@@ -14,6 +14,6 @@
   "Basic Logic": {"hidden": true},
   "Advanced Logic": {"hidden": true},
   "Separated": {"hidden": true, "yaml_option": ["key_preference"]},
-  "Progressive": {"hidden": true, "yaml_option": ["key_preference"]}
-  "Missions": {"hidden": true}
+  "Progressive": {"hidden": true, "yaml_option": ["key_preference"]},
+  "Missions": {"hidden": true, "yaml_option": ["missions"]}
 }

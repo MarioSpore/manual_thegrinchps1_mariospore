@@ -39,28 +39,28 @@ class StartingArea(Choice):
     """
     option_whoville = 0
     option_who_forest = 1
-    # option_who_dump = 2
-    option_who_lake = 2
+    option_who_dump = 2
+    option_who_lake = 3
     display_name = "Starting Area"
 
-# class Missions(DefaultOnToggle):
-    # """This allows missions that can be completed to be considered checks."""
-    # display_name = "Mission Checks"
+class Missions(DefaultOnToggle):
+    """This allows missions that can be completed to be considered checks. (22 locations)"""
+    display_name = "Mission Checks"
 
-# class Blueprints(DefaultOnToggle):
-    # """Every blueprint collected is a check."""
-    # display_name = "Blueprint Sanity"
+class Blueprints(DefaultOnToggle):
+    """Every blueprint collected is a check. (67 locations)"""
+    display_name = "Blueprint Sanity"
 
 class StoneHearts(DefaultOnToggle):
-    """Every time you collect a Heart-Of-Stone, it gives you a check."""
+    """Every time you collect a Heart-Of-Stone, it gives you a check. (4 locations)"""
     display_name = "Heart of Stone Sanity"
     
 class Supadow(Toggle):
-    """Enables completing minigames through the Supadows in Mount Crumpit as checks."""
+    """Enables completing minigames through the Supadows in Mount Crumpit as checks. (9 locations)"""
     display_name = "Supadow Minigame Checks"
     
 class Gifts(Toggle):
-    """Missions that require you to squash every present in a level."""
+    """Missions that require you to squash every present in a level. (4 locations)"""
     display_name = "Gift Collection"
 
 class Cheats(Toggle):
@@ -71,8 +71,8 @@ class Cheats(Toggle):
 def before_options_defined(options: dict) -> dict:
     options["key_preference"] = KeyType
     options["starting_area"] = StartingArea
-    # options["missions"] = Missions
-    # options["blueprintsanity"] = Blueprints
+    options["missions"] = Missions
+    options["blueprintsanity"] = Blueprints
     options["heartsanity"] = StoneHearts
     options["supadow"] = Supadow
     options["sqaush_all_gifts_missions"] = Gifts
