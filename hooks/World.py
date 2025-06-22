@@ -39,7 +39,7 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    if world.options.squash_all_gifts_missions.value == True and world.options.missions.value = False:
+    if world.options.squash_all_gifts_missions.value == True and world.options.missions.value == False:
         logging.info(f"Force enabling option missions from {player}'s world")
         world.options.missions.value == True
     if world.options.missions.value == False and world.options.blueprintsanity.value == False and world.options.heartsanity.value == False and world.options.supadow.value == False and world.options.sqaush_all_gifts_missions.value == False and world.options.visitsanity.value == False:
