@@ -55,6 +55,10 @@ class StoneHearts(DefaultOnToggle):
     """Every time you collect a Heart-Of-Stone, it gives you a check. (4 locations)"""
     display_name = "Heart of Stone Sanity"
     
+class Visitsanity(DefaultOnToggle):
+    """Everytime you enter a loading zone of a particular area for the first time is a check. (16 locations)"""
+    display_name = "VisitSanity"
+    
 class Supadow(Toggle):
     """Enables completing minigames through the Supadows in Mount Crumpit as checks. (9 locations)"""
     display_name = "Supadow Minigame Checks"
@@ -63,8 +67,12 @@ class Gifts(Toggle):
     """Missions that require you to squash every present in a level. (4 locations)"""
     display_name = "Gift Collection"
 
+class Max(Toggle):
+    """Adds Max the dog to the item pool with his logic built around him. (1 progressive item)"""
+    display_name = "Cheats"
+
 class Cheats(Toggle):
-    """Throws new items in that allows you to enable cheats through the emulator."""
+    """Throws new items in that allows you to enable cheats through the emulator. (1 useful item)"""
     display_name = "Cheats"
 
 # This is called before any manual options are defined, in case you want to define your own with a clean slate or let Manual define over them
@@ -74,8 +82,10 @@ def before_options_defined(options: dict) -> dict:
     options["missions"] = Missions
     options["blueprintsanity"] = Blueprints
     options["heartsanity"] = StoneHearts
+    options["visitsanity"] = Visitsanity
     options["supadow"] = Supadow
     options["sqaush_all_gifts_missions"] = Gifts
+    options["randomize_max"] = Max
     options["cheats"] = Cheats
     return options
 
