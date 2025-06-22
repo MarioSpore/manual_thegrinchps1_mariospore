@@ -31,6 +31,7 @@
   {"name": "Dankamania Key", "category": ["Access Keys", "Supadow Minigames", "Separated"], "count": 1, "progression": true},
   {"name": "The Copter Race Contest Key", "category": ["Access Keys", "Supadow Minigames", "Separated"], "count": 1, "progression": true},
   {"name": "Progressive Supadow Key", "category": ["Access Keys", "Supadow Minigames", "Progressive"], "count": 3, "progression": true},
+  {"name": "Max", "category": ["Max"], "count": 1, "progression": true},
   {"name": "Unlimited Rotten Eggs", "category": ["Cheats"], "count": 1, "useful": true},
   {"name": "Deplete your rotten eggs", "category": ["Traps"], "count": 0, "trap": true},
   {"name": "Tip toe for 1 minute", "category": ["Traps"], "count": 0, "trap": true},
