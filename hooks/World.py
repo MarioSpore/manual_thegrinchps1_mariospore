@@ -76,7 +76,8 @@ def before_create_items_starting(item_pool: list, world: World, multiworld: Mult
 # The item pool after starting items are processed but before filler is added, in case you want to see the raw item pool at that stage
 def before_create_items_filler(item_pool: list, world: World, multiworld: MultiWorld, player: int) -> list:
     # Use this hook to remove items from the item pool
-    itemNamesToRemove = [] # List of item names
+    if world.options.heartsanity.value == 1:
+        itemNamesToRemove = ["Heart of Stone"] # List of item names
 
     # Add your code here to calculate which items to remove.
     #
