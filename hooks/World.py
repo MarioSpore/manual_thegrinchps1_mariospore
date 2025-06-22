@@ -39,19 +39,20 @@ def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int)
 
 # Called before regions and locations are created. Not clear why you'd want this, but it's here. Victory location is included, but Victory event is not placed yet.
 def before_create_regions(world: World, multiworld: MultiWorld, player: int):
-    # if world.options.squash_all_gifts_missions.value == True: and world.options.missions.value = False:
-        # world.options.missions.value == True
-    # if world.options.missions.value == False and world.options.blueprintsanity.value == False and world.options.heartsanity.value == False and world.options.supadow.value == False and world.options.sqaush_all_gifts_missions.value == False:
-        # raise OptionError(f"This is MY Christmas! You are attempting to generate a seed with no locations! Make sure you enable at LEAST one option for a playable game. - MarioSpore")
+    if world.options.squash_all_gifts_missions.value == True: and world.options.missions.value = False:
+        logging.info(f"Force enabling option missions from {player}'s world")
+        world.options.missions.value == True
+    if world.options.missions.value == False and world.options.blueprintsanity.value == False and world.options.heartsanity.value == False and world.options.supadow.value == False and world.options.sqaush_all_gifts_missions.value == False and world.options.visitsanity.value == False:
+        raise OptionError(f"This is MY Christmas! You are attempting to generate a seed with no locations! Make sure you enable at LEAST one option for a playable game. - MarioSpore")
     if world.options.missions.value == False or world.options.blueprintsanity.value == False:
         raise OptionError(f"Ouch! It's unbearable! You are attempting to generate a seed with not enough locations! Please enable both missions or blueprintsanity to ensure the generator is able to place the necessary items into the pool. - MarioSpore")
-    if world.options.starting_area.value == 2:
+    if world.options.starting_area.value == 2 and world.options.visitsanity.value == False:
         # world.options.starting_area.value == 0 or world.options.starting_area.value == 1 or world.options.starting_area.value == 3
-        raise OptionError(f"Ya Grinched! Currently, Who Dump has no sphere 1 locations due to how the logic is designed at the moment. For now, please select another starting area until I figure this out. - MarioSpore")
-    if world.options.starting_area.value == 1 and world.options.missions.value == True and world.options.blueprintsanity.value == False:
-        raise OptionError(f"My plans! My precious plans! Who Forest does not have any starting locations for missions! Please enable blueprintsanity if you still want to start in this area. - MarioSpore")
-    if world.options.starting_area.value == 3 and world.options.missions.value == True and world.options.blueprintsanity.value == False:
-        raise OptionError(f"Gotcha! Who Lake does not have any starting locations for missions! Please enable blueprintsanity if you still want to start in this area. - MarioSpore")
+        raise OptionError(f"Ya Grinched! Currently, Who Dump has no sphere 1 locations due to how the logic is designed at the moment. Please enable visitsanity to guarantee a sphere 1 location. - MarioSpore")
+    if world.options.starting_area.value == 1 and world.options.blueprintsanity.value == False and world.options.visitsanity.value == False:
+        raise OptionError(f"My plans! My precious plans! Who Forest does not have any starting locations for missions! Please enable either blueprintsanity or visitsanity if you still want to start in this area. - MarioSpore")
+    if world.options.starting_area.value == 3 and world.options.blueprintsanity.value == False and world.options.visitsanity.value == False:
+        raise OptionError(f"Gotcha! Who Lake does not have any starting locations for missions! Please enable either blueprintsanity or visitsanity if you still want to start in this area. - MarioSpore")
     pass
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
