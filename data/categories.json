@@ -15,5 +15,6 @@
   "Advanced Logic": {"hidden": true},
   "Separated": {"hidden": true, "yaml_option": ["key_preference"]},
   "Progressive": {"hidden": true, "yaml_option": ["key_preference"]},
-  "Missions": {"hidden": true, "yaml_option": ["missions"]}
+  "Missions": {"hidden": true, "yaml_option": ["missions"]},
+  "Missionsanity": {"hidden": true}
 }
