@@ -16,5 +16,7 @@
   "Separated": {"hidden": true, "yaml_option": ["key_preference"]},
   "Progressive": {"hidden": true, "yaml_option": ["key_preference"]},
   "Missions": {"hidden": true, "yaml_option": ["missions"]},
-  "Missionsanity": {"hidden": true}
+  "Missionsanity": {"hidden": true},
+  "Visitsanity": {"yaml_option": ["visitsanity"]},
+  "Max": {"yaml_option": ["randomize_max"]}
 }
