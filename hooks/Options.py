@@ -84,7 +84,7 @@ def before_options_defined(options: dict) -> dict:
     options["heartsanity"] = StoneHearts
     options["visitsanity"] = Visitsanity
     options["supadow"] = Supadow
-    options["sqaush_all_gifts_missions"] = Gifts
+    options["squash_all_gifts_missions"] = Gifts
     options["randomize_max"] = Max
     options["cheats"] = Cheats
     return options

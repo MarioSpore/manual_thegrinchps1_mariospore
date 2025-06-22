@@ -2,7 +2,7 @@
   "Blueprints": {"hidden": true, "yaml_option": ["blueprintsanity"]},
   "Heart of Stones": {"yaml_option": ["heartsanity"]},
   "Supadow Minigames": {"yaml_option": ["supadow"]},
-  "Gift Squashing Missions": {"hidden": true, "yaml_option": ["sqaush_all_gifts_missions"]},
+  "Gift Squashing Missions": {"hidden": true, "yaml_option": ["squash_all_gifts_missions"]},
   "Access Keys": {"hidden": true},
   "Cheats": {"yaml_option": ["cheats"]},
   "Very Mission Specific Items": {"hidden": true},
