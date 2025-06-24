@@ -18,5 +18,5 @@
   "Missions": {"hidden": true, "yaml_option": ["missions"]},
   "Missionsanity": {"hidden": true},
   "Visitsanity": {"yaml_option": ["visitsanity"]},
-  "Max": {"yaml_option": ["randomize_max"]}
+  "Movesanity": {"yaml_option": ["movesanity"]}
 }

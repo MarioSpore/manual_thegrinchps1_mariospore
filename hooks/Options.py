@@ -67,9 +67,9 @@ class Gifts(Toggle):
     """Missions that require you to squash every present in a level. (4 locations)"""
     display_name = "Gift Collection"
 
-class Max(Toggle):
-    """Adds Max the dog to the item pool with his logic built around him. (1 progressive item)"""
-    display_name = "Cheats"
+class Movesanity(Toggle):
+    """Randomizes Grinch's moveset along with randomizing max into the pool. (Currently randomizes Max)"""
+    display_name = "Movesanity"
 
 class Cheats(Toggle):
     """Throws new items in that allows you to enable cheats through the emulator. (1 useful item)"""
@@ -85,7 +85,7 @@ def before_options_defined(options: dict) -> dict:
     options["visitsanity"] = Visitsanity
     options["supadow"] = Supadow
     options["squash_all_gifts_missions"] = Gifts
-    options["randomize_max"] = Max
+    options["Movesanity"] = Movesanity
     options["cheats"] = Cheats
     return options
 
