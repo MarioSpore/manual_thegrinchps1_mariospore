@@ -43,21 +43,21 @@ class StartingArea(Choice):
     option_who_lake = 3
     display_name = "Starting Area"
 
-class Missions(DefaultOnToggle):
-    """This allows missions that can be completed to be considered checks. (22 locations)"""
-    display_name = "Mission Checks"
+# class Missions(DefaultOnToggle):
+    # """This allows missions that can be completed to be considered checks. (22 locations)"""
+    # display_name = "Mission Checks"
 
-class Blueprints(DefaultOnToggle):
-    """Every blueprint collected is a check. (67 locations)"""
-    display_name = "Blueprint Sanity"
+# class Blueprints(DefaultOnToggle):
+    # """Every blueprint collected is a check. (67 locations)"""
+    # display_name = "Blueprint Sanity"
 
 class StoneHearts(DefaultOnToggle):
     """Every time you collect a Heart-Of-Stone, it gives you a check. (4 locations)"""
     display_name = "Heart of Stone Sanity"
     
-class Visitsanity(DefaultOnToggle):
-    """Everytime you enter a loading zone of a particular area for the first time is a check. (16 locations)"""
-    display_name = "VisitSanity"
+# class Visitsanity(DefaultOnToggle):
+    # """Everytime you enter a loading zone of a particular area for the first time is a check. (16 locations)"""
+    # display_name = "VisitSanity"
     
 class Supadow(Toggle):
     """Enables completing minigames through the Supadows in Mount Crumpit as checks. (9 locations)"""
@@ -79,10 +79,10 @@ class Cheats(Toggle):
 def before_options_defined(options: dict) -> dict:
     options["key_preference"] = KeyType
     options["starting_area"] = StartingArea
-    options["missions"] = Missions
-    options["blueprintsanity"] = Blueprints
+    # options["missions"] = Missions
+    # options["blueprintsanity"] = Blueprints
     options["heartsanity"] = StoneHearts
-    options["visitsanity"] = Visitsanity
+    # options["visitsanity"] = Visitsanity
     options["supadow"] = Supadow
     options["squash_all_gifts_missions"] = Gifts
     options["movesanity"] = Movesanity

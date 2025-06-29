@@ -1,22 +1,16 @@
 {
-  "Blueprints": {"hidden": true, "yaml_option": ["blueprintsanity"]},
-  "Heart of Stones": {"yaml_option": ["heartsanity"]},
-  "Supadow Minigames": {"yaml_option": ["supadow"]},
-  "Gift Squashing Missions": {"hidden": true, "yaml_option": ["squash_all_gifts_missions"]},
+  "Blueprints": {"hidden": true},
+  "Gift Squashing Missions": {"hidden": true},
   "Access Keys": {"hidden": true},
-  "Cheats": {"yaml_option": ["cheats"]},
   "Very Mission Specific Items": {"hidden": true},
   "Building Keys": {"hidden": true},
   "Traps": {"hidden": true},
-  "Movesanity": {"hidden": true},
   "Present Fillers": {"hidden": true},
   "Gift Sanity": {"hidden": true},
   "Basic Logic": {"hidden": true},
   "Advanced Logic": {"hidden": true},
-  "Separated": {"hidden": true, "yaml_option": ["key_preference"]},
-  "Progressive": {"hidden": true, "yaml_option": ["key_preference"]},
-  "Missions": {"hidden": true, "yaml_option": ["missions"]},
-  "Missionsanity": {"hidden": true},
-  "Visitsanity": {"yaml_option": ["visitsanity"]},
-  "Movesanity": {"yaml_option": ["movesanity"]}
+  "Separated": {"hidden": true},
+  "Progressive": {"hidden": true},
+  "Missions": {"hidden": true},
+  "Missionsanity": {"hidden": true}
 }
