@@ -45,27 +45,27 @@ class StartingArea(Choice):
 
 # class Missions(DefaultOnToggle):
     # """This allows missions that can be completed to be considered checks. (22 locations)"""
-    # display_name = "Mission Checks"
+    # display_name = "Mission Locations"
 
 class Blueprints(DefaultOnToggle):
     """Every blueprint collected is a check. (67 locations)"""
-    display_name = "Blueprint Sanity"
+    display_name = "Blueprint Locations"
 
 class StoneHearts(DefaultOnToggle):
     """Every time you collect a Heart-Of-Stone, it gives you a check. (4 locations)"""
-    display_name = "Heart of Stone Sanity"
+    display_name = "Heart of Stone Locations"
     
 # class Visitsanity(DefaultOnToggle):
     # """Everytime you enter a loading zone of a particular area for the first time is a check. (16 locations)"""
-    # display_name = "VisitSanity"
+    # display_name = "Visitsanity"
     
 class Supadow(Toggle):
     """Enables completing minigames through the Supadows in Mount Crumpit as checks. (9 locations)"""
-    display_name = "Supadow Minigame Checks"
+    display_name = "Supadow Minigame Locations"
     
 class Gifts(Toggle):
     """Missions that require you to squash every present in a level. (4 locations)"""
-    display_name = "Gift Collection"
+    display_name = "Gift Collection Locations"
 
 class Movesanity(Toggle):
     """Randomizes Grinch's moveset along with randomizing max into the pool. (Currently randomizes Max)"""
