@@ -1,6 +1,6 @@
 {
   "game": "TheGrinchPS1",
   "player": "MarioSpore",
-  "death_link": "TRUE",
+  "death_link": true,
   "filler_item_name": "Present"
 }
