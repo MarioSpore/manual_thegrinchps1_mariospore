@@ -1,7 +1,11 @@
 {
-  "Blueprints": {"hidden": true},
-  "Gift Squashing Missions": {"hidden": true},
+  "Blueprints": {"hidden": true, "yaml_option": ["blueprintsanity"]},
+  "Heart of Stones": {"yaml_option": ["heartsanity"]},
+  "Sleigh Room": {},
+  "Supadow Minigames": {"yaml_option": ["supadow"]},
+  "Gift Squashing Missions": {"hidden": true, "yaml_option": ["squash_all_gifts_missions"]},
   "Access Keys": {"hidden": true},
+  "Cheats": {"yaml_option": ["cheats"]},
   "Very Mission Specific Items": {"hidden": true},
   "Building Keys": {"hidden": true},
   "Traps": {"hidden": true},
@@ -12,5 +16,7 @@
   "Separated": {"hidden": true},
   "Progressive": {"hidden": true},
   "Missions": {"hidden": true},
-  "Missionsanity": {"hidden": true}
+  "Missionsanity": {"hidden": true},
+  "Visitsanity": {},
+  "Movesanity": {"yaml_option": ["movesanity"]}
 }
