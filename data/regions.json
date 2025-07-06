@@ -1,9 +1,9 @@
 {
   "Mount Crumpit": {"starting": true, "connects_to": ["Whoville", "Who Forest", "Who Dump", "Who Lake", "Sleigh Room"]},
-  "Whoville": {"requires": "{OptOne(|Whoville Access Key|)}", "connects_to": ["Mount Crumpit", "Post Office", "City Hall", "Countdown to X-Mas Clock Tower"]},
-  "Who Forest": {"requires": "{OptOne(|Who Forest Access Key|)} OR {OptOne(|Progressive Area Access Key:1|)}", "connects_to": ["Mount Crumpit", "Ski Resort", "Civic Center"]},
-  "Who Dump": {"requires": "{OptOne(|Who Dump Access Key|)} OR {OptOne(|Progressive Area Access Key:2|)}", "connects_to": ["Mount Crumpit", "Outside Power Plant", "Minefield", "Inside Power Plant"]},
-  "Who Lake": {"requires": "{OptOne(|Who Lake Access Key|)} OR {OptOne(|Progressive Area Access Key:3|)}", "connects_to": ["Mount Crumpit", "North Shore", "Submarine World"]},
+  "Whoville": {"requires": "({YamlDisabled(key_preference)} AND |Whoville Access Key|) OR {YamlEnabled(key_preference)}", "connects_to": ["Mount Crumpit", "Post Office", "City Hall", "Countdown to X-Mas Clock Tower"]},
+  "Who Forest": {"requires": "({YamlDisabled(key_preference)} AND |Who Forest Access Key|) OR ({YamlEnabled(key_preference)} AND |Progressive Area Access Key:1|)", "connects_to": ["Mount Crumpit", "Ski Resort", "Civic Center"]},
+  "Who Dump": {"requires": "({YamlDisabled(key_preference)} AND |Who Dump Access Key|) OR ({YamlEnabled(key_preference)} AND |Progressive Area Access Key:2|)", "connects_to": ["Mount Crumpit", "Outside Power Plant", "Minefield", "Inside Power Plant"]},
+  "Who Lake": {"requires": "({YamlDisabled(key_preference)} AND |Who Lake Access Key|) OR ({YamlEnabled(key_preference)} AND |Progressive Area Access Key:3|)", "connects_to": ["Mount Crumpit", "North Shore", "Submarine World"]},
   "Sleigh Room": {"requires": "|@Sleigh Parts:5|", "connects_to": ["Mount Crumpit"]},
   "Post Office": {"requires": "|Who Cloak|", "connects_to": ["Whoville"]},
   "City Hall": {"requires": "|Rotten Egg Launcher|", "connects_to": ["Whoville"]},
