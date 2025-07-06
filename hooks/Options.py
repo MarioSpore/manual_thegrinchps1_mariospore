@@ -47,9 +47,9 @@ class StartingArea(Choice):
     # """This allows missions that can be completed to be considered checks. (22 locations)"""
     # display_name = "Mission Locations"
 
-class Blueprints(DefaultOnToggle):
-    """Every blueprint collected is a check. (67 locations)"""
-    display_name = "Blueprint Locations"
+# class Blueprints(DefaultOnToggle):
+    # """Every blueprint collected is a check. (67 locations)"""
+    # display_name = "Blueprint Locations"
 
 class StoneHearts(DefaultOnToggle):
     """Every time you collect a Heart-Of-Stone, it gives you a check. (4 locations)"""
@@ -80,7 +80,7 @@ def before_options_defined(options: dict) -> dict:
     options["key_preference"] = KeyType
     options["starting_area"] = StartingArea
     # options["missions"] = Missions
-    options["blueprintsanity"] = Blueprints
+    # options["blueprintsanity"] = Blueprints
     options["heartsanity"] = StoneHearts
     # options["visitsanity"] = Visitsanity
     options["supadow"] = Supadow

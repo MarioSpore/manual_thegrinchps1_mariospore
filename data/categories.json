@@ -1,5 +1,5 @@
 {
-  "Blueprints": {"hidden": true, "yaml_option": ["blueprintsanity"]},
+  "Blueprints": {"hidden": true},
   "Heart of Stones": {"yaml_option": ["heartsanity"]},
   "Sleigh Room": {},
   "Supadow Minigames": {"yaml_option": ["supadow"]},
