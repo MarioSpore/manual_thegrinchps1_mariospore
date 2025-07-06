@@ -33,8 +33,12 @@
   {"name": "Progressive Supadow Key", "category": ["Access Keys", "Supadow Minigames", "Progressive"], "count": 3, "progression": true},
   {"name": "Max", "category": ["Movesanity"], "count": 1, "progression": true},
   {"name": "Unlimited Rotten Eggs", "category": ["Cheats"], "count": 1, "useful": true},
-  {"name": "Deplete your rotten eggs", "category": ["Traps"], "count": 0, "trap": true},
-  {"name": "Tip toe for 1 minute", "category": ["Traps"], "count": 0, "trap": true},
-  {"name": "All gadgets disabled for 30 seconds", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Depletion Trap", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Tip Toe Trap", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Rocket Spring Trap", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Pancake Trap", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Damage Trap", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Return to Crumpit Trap", "category": ["Traps"], "count": 0, "trap": true},
+  {"name": "Freeze Trap", "category": ["Traps"], "count": 0, "trap": true},
   {"name": "Heart of Stone", "category": ["Heart-Of-Stones"], "count": 4, "useful": true}
 ]
